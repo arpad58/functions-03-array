@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        // 1. Feladat    -  sumMultiplyArray
+        // Írj egy olyan függvény kifejezést, 
+        // ami paraméterként vár egy egész számokat tartalmazó tömböt! 
+        // (Input ellenőrzést nem kell végezni.)
+        // A függvény szorozza meg tömbelemek értékét 1.27-el, 
+        // majd pedig térjen vissza az elemek összegével!
+
+        const numericArray = [1, 2, 3, 4, 5, 6,];
+
+        const sumMultiplyArray = numericArray
+            .map(item => item * 1.27)
+            .reduce((previousValue, currentValue) => previousValue + currentValue);
+
+        console.log(sumMultiplyArray);   //  26.669999999999998
+
+    </script>
+
+</body>
+
+</html>
